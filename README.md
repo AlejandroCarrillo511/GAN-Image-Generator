@@ -1,42 +1,53 @@
-# GAN Image Generator for Football Dataset
+# Generador de Imágenes GAN para Dataset de Fútbol
 
-This repository contains a GAN (Generative Adversarial Network) implemented in Python to generate football-related images. The project leverages TensorFlow and Kaggle datasets for training.
+Este repositorio contiene una red GAN (Generative Adversarial Network) implementada en Python para generar imágenes relacionadas con el fútbol. El proyecto utiliza TensorFlow y datasets de Kaggle para el entrenamiento.
 
-## How to Use
+## Cómo Usar
 
-### 1. Open the Notebook
-You can interact with the notebook and generate images using the following platforms:
+### 1. Abre el Cuaderno
+Puedes interactuar con el cuaderno y generar imágenes utilizando las siguientes plataformas:
 
-- **Google Colab**: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/<your-repository>/blob/main/Futbol_200_updated.ipynb)
-- **Binder**: [Launch Binder](https://mybinder.org/v2/gh/<your-username>/<your-repository>/HEAD)
+- **Google Colab**: [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<AlejandroCarrillo511>/<GAN-Image-Generator>/blob/main/Futbol_200_updated.ipynb)
+- **Binder**: [Iniciar Binder](https://mybinder.org/v2/gh/<tu-usuario>/<tu-repositorio>/HEAD)
 
-Replace `<AlejandroCarrillo511>` and `<GAN-Image-Generator>` with your GitHub username and repository name.
+Reemplaza `<tu-usuario>` y `<tu-repositorio>` con tu nombre de usuario y el nombre de tu repositorio en GitHub.
 
-### 2. Run the Notebook
+### 2. Ejecuta el Cuaderno
 
-- Upload your `kaggle.json` file to access the Kaggle dataset.
-- Execute all the cells to train the GAN or load a pre-trained model.
-- Generated images will be saved automatically in the `generated_images` directory.
+- Sube tu archivo `kaggle.json` para acceder al dataset de Kaggle.
+- Ejecuta todas las celdas para entrenar la GAN o cargar un modelo preentrenado.
+- Las imágenes generadas se guardarán automáticamente en el directorio `generated_images`.
 
-## Requirements
+## Requisitos
 
 - Python 3.7+
 - TensorFlow
 - Kaggle API
 
-## Generating Images
+## Generación de Imágenes
 
-The notebook includes a function to save generated images:
+El cuaderno incluye una función para guardar las imágenes generadas:
 
 ```python
-save_generated_image(image, filename="generated_image.png")
+def save_generated_image(image, filename="generated_image.png"):
+    filepath = os.path.join(output_dir, filename)
+    plt.imshow(image)
+    plt.axis("off")
+    plt.savefig(filepath, bbox_inches="tight")
+    print(f"Imagen guardada en: {filepath}")
 ```
-All saved images are located in the `generated_images` folder for easy access.
 
-## Contributing
+Todas las imágenes guardadas se encontrarán en la carpeta `generated_images` para un acceso fácil.
 
-Feel free to fork this repository and submit pull requests to improve the project.
+## Contribuir
 
-## License
+Siéntete libre de hacer un fork de este repositorio y enviar pull requests para mejorar el proyecto.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
