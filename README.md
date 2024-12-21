@@ -7,10 +7,8 @@ Este repositorio contiene una red GAN (Generative Adversarial Network) implement
 ### 1. Abre el Cuaderno
 Puedes interactuar con el cuaderno y generar imágenes utilizando las siguientes plataformas:
 
-- **Google Colab**: [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<AlejandroCarrillo511>/<GAN-Image-Generator>/blob/main/Futbol_200_updated.ipynb)
-- **Binder**: [Iniciar Binder](https://mybinder.org/v2/gh/<tu-usuario>/<tu-repositorio>/HEAD)
-
-Reemplaza `<tu-usuario>` y `<tu-repositorio>` con tu nombre de usuario y el nombre de tu repositorio en GitHub.
+- **Google Colab**: [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlejandroCarrillo511/GAN-Image-Generator/blob/main/Futbol_200_updated.ipynb)
+- **Binder**: [Iniciar Binder](https://mybinder.org/v2/gh/AlejandroCarrillo511/GAN-Image-Generator/HEAD)
 
 ### 2. Ejecuta el Cuaderno
 
@@ -42,10 +40,6 @@ Todas las imágenes guardadas se encontrarán en la carpeta `generated_images` p
 ## Contribuir
 
 Siéntete libre de hacer un fork de este repositorio y enviar pull requests para mejorar el proyecto.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Licencia
 
